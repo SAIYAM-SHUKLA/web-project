@@ -1,0 +1,27 @@
+<%-include('partials/head')%>
+<body>
+    <%-include("partials/new") %>
+    <br><form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="name_of_certificate">enter name of the certificate</label>
+        <input type="text" id="name_of_certificate" name="name_of_certificate">
+
+
+        <label for="discription_of_the_certificate">discription_of_the_certificate</label>
+        <input type="text" id="discription_of_the_certificate" name="discription_of_the_certificate">
+
+
+        <label for="date_of_reciving">date_of_reciving</label>
+        <input type="text" id="date_of_reciving" name="date_of_reciving">
+
+        <label for="review">review</label>
+        <input type="text" id="review" name="review">
+
+
+    <label for="img">enter the image here</label>
+    <input name="certificate" type="file" class="img" accept="image" onchange="readURL(this)">
+    <input type="submit">
+</form>
+
+
+    <%-include('partials/footer')%>
+</body>

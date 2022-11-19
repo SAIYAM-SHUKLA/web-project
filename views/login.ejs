@@ -1,0 +1,14 @@
+<%-include('partials/head')%>
+<body>
+    <%-include("partials/new") %>
+    <div class="form">
+    <form action="/details_match" method="get">
+         <label for="id" >Enter the id</label>
+         <input type="text"class="id " name="id" placeholder="enter id">
+         <label for="pass" >enter passward</label>
+         <input type="text"class="pass" name="pass" placeholder="enter"><br><br>
+         <input type="submit" placeholder="login" class="btn">
+    </form>
+</div>
+    <%-include('partials/footer')%>
+</body>

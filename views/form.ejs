@@ -1,0 +1,24 @@
+<%-include('partials/head')%>
+<body>
+    <%-include("partials/new") %> <div class="form">
+    <form action="/action" method="get">
+        <label for="name">Enter the name of your organisation</label>
+        <input type="text" id="name" name="cname"><br><br>
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="cantno">Enter the contact number here</label>
+        <input type="number" name="cont_no" class="cantno"><br><br>
+        <label for="review">Enter what can I improve in this wevsite</label>
+        <input type="text " name="review" class="review"><br><br>
+        <label for="other_review">Write a review on this website</label>
+        <input type="text " name="other_review" class="other_review"><br><br>
+        <input type="submit" class="btn" value="Submit">
+      </form>
+    </div>
+
+
+      <%-include('partials/footer')%>
+
+    
+</body>
+</html>
