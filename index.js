@@ -39,7 +39,7 @@ const storage = multer.diskStorage({
 
 
 
-mongoose.connect("mongodb://localhost:27017/PORIPHOLIO_PERSON_RECORD").then(()=>{console.log("this connection work")})
+mongoose.connect("mongodb://notifyDBUrl/PORIPHOLIO_PERSON_RECORD").then(()=>{console.log("this connection work")})
 .catch(err=>{
     console.log("this is an err")
     console.log(err)
