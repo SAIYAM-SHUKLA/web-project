@@ -39,11 +39,11 @@ const storage = multer.diskStorage({
 
 
 
-// mongoose.connect("mongodb://localhost:27017/PORIPHOLIO_PERSON_RECORD").then(()=>{console.log("this connection work")})
-// .catch(err=>{
-//     console.log("this is an err")
-//     console.log(err)
-// })
+mongoose.connect("mongodb://localhost:27017/PORIPHOLIO_PERSON_RECORD").then(()=>{console.log("this connection work")})
+.catch(err=>{
+    console.log("this is an err")
+    console.log(err)
+})
 
 
 
@@ -111,3 +111,6 @@ app.post("/upload",upload,(req,res)=>{
         a.save().then(()=>{console.log("sussessfully submited")})
 
 })
+
+
+
